@@ -154,6 +154,44 @@ export default function ComparePage() {
         </div>
       ) : null}
 
+      <div className="panel" data-testid="multi-pro-overlay-panel">
+        <div className="flex flex-wrap justify-between gap-3 items-start mb-4">
+          <div>
+            <h3 className="font-semibold">Overlay multiple pros</h3>
+            <p className="muted text-sm">
+              Click a bowler to toggle overlay — shape how your action stacks against multiple
+              legends on a single radar.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2" data-testid="pro-overlay-chips">
+            {profiles.map((p) => {
+              const active = overlayNames.includes(p.name);
+              return (
+                <Button
+                  key={p.name}
+                  type="button"
+                  size="sm"
+                  variant={active ? "default" : "outline"}
+                  className={active ? "btn-brand" : "btn-outline-brand"}
+                  onClick={() =>
+                    setOverlayNames((names) =>
+                      active ? names.filter((n) => n !== p.name) : [...names, p.name],
+                    )
+                  }
+                  data-testid={`overlay-chip-${p.name.toLowerCase().replace(/\s+/g, "-")}`}
+                >
+                  {p.name}
+                </Button>
+              );
+            })}
+          </div>
+        </div>
+        <MultiProRadar
+          athleteMetrics={athleteReport?.metrics?.comparison_inputs || {}}
+          pros={profiles.filter((p) => overlayNames.includes(p.name))}
+        />
+      </div>
+
       {data ? (
         <>
           <div className="grid gap-4 md:grid-cols-[1.2fr_0.8fr]">
@@ -228,44 +266,6 @@ export default function ComparePage() {
             title="Metric-by-metric comparison"
             description="Hover to inspect deltas, weights and similarity scores per metric."
           />
-
-          <div className="panel" data-testid="multi-pro-overlay-panel">
-            <div className="flex flex-wrap justify-between gap-3 items-start mb-4">
-              <div>
-                <h3 className="font-semibold">Overlay multiple pros</h3>
-                <p className="muted text-sm">
-                  Click a bowler to toggle overlay — shape how your action stacks against multiple
-                  legends on a single radar.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-2" data-testid="pro-overlay-chips">
-                {profiles.map((p) => {
-                  const active = overlayNames.includes(p.name);
-                  return (
-                    <Button
-                      key={p.name}
-                      type="button"
-                      size="sm"
-                      variant={active ? "default" : "outline"}
-                      className={active ? "btn-brand" : "btn-outline-brand"}
-                      onClick={() =>
-                        setOverlayNames((names) =>
-                          active ? names.filter((n) => n !== p.name) : [...names, p.name],
-                        )
-                      }
-                      data-testid={`overlay-chip-${p.name.toLowerCase().replace(/\s+/g, "-")}`}
-                    >
-                      {p.name}
-                    </Button>
-                  );
-                })}
-              </div>
-            </div>
-            <MultiProRadar
-              athleteMetrics={athleteReport?.metrics?.comparison_inputs || {}}
-              pros={profiles.filter((p) => overlayNames.includes(p.name))}
-            />
-          </div>
         </>
       ) : null}
     </AppShell>

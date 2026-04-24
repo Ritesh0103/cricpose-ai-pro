@@ -99,7 +99,21 @@ export default function DashboardPage() {
       </div>
 
       <div className="grid gap-4 md:grid-cols-[1.3fr_0.7fr]">
-        <ProgressChart data={trend} />
+        {trend.length ? (
+          <ProgressChart data={trend} />
+        ) : (
+          <div className="panel flex flex-col gap-3" data-testid="progress-empty">
+            <div className="eyebrow">Session progression</div>
+            <h3 className="text-lg font-semibold">Your progress chart appears after 2+ sessions</h3>
+            <p className="muted text-sm">
+              Overall, efficiency and injury-probability will be charted across every saved bowling
+              analysis so you can spot trends across weeks of work.
+            </p>
+            <div className="h-40 rounded-xl border border-dashed border-[var(--line)] grid place-items-center">
+              <span className="muted text-sm">Chart unlocks on your second upload</span>
+            </div>
+          </div>
+        )}
 
         <div className="panel flex flex-col gap-3" data-testid="latest-session-card">
           <div className="flex justify-between items-start">

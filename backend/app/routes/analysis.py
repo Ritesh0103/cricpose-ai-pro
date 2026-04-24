@@ -4,7 +4,7 @@ from pathlib import Path
 from uuid import uuid4
 
 from fastapi import APIRouter, Depends, File, HTTPException, Request, UploadFile
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 
 from app.core.config import ALLOWED_CONTENT_TYPES, PROCESSED_DIR, REPORTS_DIR, UPLOAD_DIR
 from app.deps import get_current_user
@@ -196,7 +196,6 @@ async def export_csv(
     report = await report_service.get_report(report_id, current_user["_id"])
     _, builder = _CSV_BUILDERS[kind]
     csv_text = builder(report)
-    from fastapi.responses import Response
 
     filename = f"cricpose-{kind}-{report_id[:8]}.csv"
     return Response(
