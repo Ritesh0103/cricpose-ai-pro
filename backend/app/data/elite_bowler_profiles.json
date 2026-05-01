@@ -1,0 +1,198 @@
+[
+  {
+    "name": "Jasprit Bumrah",
+    "style": "Sling Actions",
+    "handedness": "Right-arm fast",
+    "speed_range": [138, 148],
+    "archetype": "Unorthodox release, compact gather, elite release precision",
+    "tags": ["closest", "sling", "pace"],
+    "visual": {
+      "label": "JP",
+      "primary": "#57f0ff",
+      "secondary": "#9a7cff",
+      "stance": "Compact gather with late sling release"
+    },
+    "metrics": {
+      "release_angle": 199.0,
+      "front_knee_brace": 162.0,
+      "back_leg_drive": 85.0,
+      "shoulder_alignment": 89.0,
+      "hip_rotation": 103.0,
+      "bowling_arm_speed": 89.0,
+      "elbow_extension": 166.0,
+      "head_stability": 90.0,
+      "follow_through_balance": 83.0,
+      "stride_length": 1.78,
+      "runup_consistency": 87.0,
+      "overall_efficiency": 92.0
+    }
+  },
+  {
+    "name": "Mitchell Starc",
+    "style": "Pace Legends",
+    "handedness": "Left-arm fast",
+    "speed_range": [142, 152],
+    "archetype": "Explosive left-arm pace with long stride and front-leg brace",
+    "tags": ["closest", "pace", "swing"],
+    "visual": {
+      "label": "MS",
+      "primary": "#f4c15d",
+      "secondary": "#57f0ff",
+      "stance": "Long left-arm stride with steep release"
+    },
+    "metrics": {
+      "release_angle": 207.0,
+      "front_knee_brace": 169.0,
+      "back_leg_drive": 88.0,
+      "shoulder_alignment": 86.0,
+      "hip_rotation": 109.0,
+      "bowling_arm_speed": 94.0,
+      "elbow_extension": 169.0,
+      "head_stability": 84.0,
+      "follow_through_balance": 85.0,
+      "stride_length": 1.99,
+      "runup_consistency": 83.0,
+      "overall_efficiency": 93.0
+    }
+  },
+  {
+    "name": "Mohammed Shami",
+    "style": "Swing Bowlers",
+    "handedness": "Right-arm fast",
+    "speed_range": [135, 145],
+    "archetype": "High-seam repeatability with smooth alignment and wrist position",
+    "tags": ["closest", "swing"],
+    "visual": {
+      "label": "SM",
+      "primary": "#86ff9f",
+      "secondary": "#57f0ff",
+      "stance": "Tall seam position with repeatable release"
+    },
+    "metrics": {
+      "release_angle": 202.0,
+      "front_knee_brace": 166.0,
+      "back_leg_drive": 82.0,
+      "shoulder_alignment": 91.0,
+      "hip_rotation": 101.0,
+      "bowling_arm_speed": 87.0,
+      "elbow_extension": 167.0,
+      "head_stability": 91.0,
+      "follow_through_balance": 88.0,
+      "stride_length": 1.86,
+      "runup_consistency": 90.0,
+      "overall_efficiency": 91.0
+    }
+  },
+  {
+    "name": "Brett Lee",
+    "style": "Pace Legends",
+    "handedness": "Right-arm fast",
+    "speed_range": [145, 155],
+    "archetype": "High-speed kinetic chain with aggressive back-leg drive",
+    "tags": ["closest", "pace"],
+    "visual": {
+      "label": "BL",
+      "primary": "#ff8b6a",
+      "secondary": "#f4c15d",
+      "stance": "Explosive bound with aggressive hip drive"
+    },
+    "metrics": {
+      "release_angle": 210.0,
+      "front_knee_brace": 171.0,
+      "back_leg_drive": 91.0,
+      "shoulder_alignment": 84.0,
+      "hip_rotation": 114.0,
+      "bowling_arm_speed": 97.0,
+      "elbow_extension": 171.0,
+      "head_stability": 81.0,
+      "follow_through_balance": 82.0,
+      "stride_length": 1.94,
+      "runup_consistency": 81.0,
+      "overall_efficiency": 94.0
+    }
+  },
+  {
+    "name": "James Anderson",
+    "style": "Swing Bowlers",
+    "handedness": "Right-arm fast-medium",
+    "speed_range": [128, 138],
+    "archetype": "Rhythm-driven action with elite alignment and seam repeatability",
+    "tags": ["closest", "swing"],
+    "visual": {
+      "label": "JA",
+      "primary": "#d6f0ff",
+      "secondary": "#57f0ff",
+      "stance": "Balanced gather and smooth classical action"
+    },
+    "metrics": {
+      "release_angle": 196.0,
+      "front_knee_brace": 160.0,
+      "back_leg_drive": 78.0,
+      "shoulder_alignment": 93.0,
+      "hip_rotation": 97.0,
+      "bowling_arm_speed": 81.0,
+      "elbow_extension": 164.0,
+      "head_stability": 94.0,
+      "follow_through_balance": 91.0,
+      "stride_length": 1.81,
+      "runup_consistency": 93.0,
+      "overall_efficiency": 90.0
+    }
+  },
+  {
+    "name": "Dale Steyn",
+    "style": "Pace Legends",
+    "handedness": "Right-arm fast",
+    "speed_range": [141, 151],
+    "archetype": "Whippy high pace with dynamic stride and sharp shoulder-hip transfer",
+    "tags": ["closest", "pace", "swing"],
+    "visual": {
+      "label": "DS",
+      "primary": "#7af2c8",
+      "secondary": "#f4c15d",
+      "stance": "Whippy action with long, attacking follow-through"
+    },
+    "metrics": {
+      "release_angle": 205.0,
+      "front_knee_brace": 168.0,
+      "back_leg_drive": 89.0,
+      "shoulder_alignment": 87.0,
+      "hip_rotation": 111.0,
+      "bowling_arm_speed": 95.0,
+      "elbow_extension": 170.0,
+      "head_stability": 86.0,
+      "follow_through_balance": 84.0,
+      "stride_length": 1.93,
+      "runup_consistency": 84.0,
+      "overall_efficiency": 94.0
+    }
+  },
+  {
+    "name": "Pat Cummins",
+    "style": "Pace Legends",
+    "handedness": "Right-arm fast",
+    "speed_range": [140, 150],
+    "archetype": "High seam position with hit-the-deck bounce and strong front-leg brace",
+    "tags": ["closest", "pace"],
+    "visual": {
+      "label": "PC",
+      "primary": "#c1f257",
+      "secondary": "#57f0ff",
+      "stance": "Tall gather with powerful vertical front-leg brace"
+    },
+    "metrics": {
+      "release_angle": 208.0,
+      "front_knee_brace": 172.0,
+      "back_leg_drive": 90.0,
+      "shoulder_alignment": 90.0,
+      "hip_rotation": 106.0,
+      "bowling_arm_speed": 92.0,
+      "elbow_extension": 170.0,
+      "head_stability": 92.0,
+      "follow_through_balance": 89.0,
+      "stride_length": 1.91,
+      "runup_consistency": 89.0,
+      "overall_efficiency": 94.0
+    }
+  }
+]
